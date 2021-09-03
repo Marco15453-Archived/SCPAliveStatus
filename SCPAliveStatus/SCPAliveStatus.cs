@@ -10,10 +10,6 @@ namespace SCPAliveStatus {
 
         private PlayerHandler playerHandler;
 
-        public SCPAliveStatus() {
-
-        }
-
         public override void OnEnabled() {
             Instance = this;
             RegisterEvents();
@@ -23,12 +19,6 @@ namespace SCPAliveStatus {
         public override void OnDisabled() {
             UnregisterEvents();
             base.OnDisabled();
-        }
-
-        public override void OnReloaded() {
-            UnregisterEvents();
-            RegisterEvents();
-            base.OnReloaded();
         }
 
         private void RegisterEvents() {

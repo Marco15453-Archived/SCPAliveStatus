@@ -1,5 +1,6 @@
 ﻿using Exiled.API.Interfaces;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace SCPAliveStatus {
     public sealed class Config : IConfig {
@@ -9,14 +10,16 @@ namespace SCPAliveStatus {
         public ushort BroadcastDuration { get; set; } = 3;
 
         [Description("The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! {SCP} will be replaced with the SCPName")]
-        public string BroadcastMessage { get; set; } = "<color=red>{SCP}</color> <color=aqua>is no longer alive! {Team}</color>";
+        public string BroadcastMessage { get; set; } = "{SCP} is no longer alive!";
 
-        [Description("What SCP Death Annoucement should be enabled?")]
-        public bool scp_106 { get; set; } = true;
-        public bool scp_096 { get; set; } = true;
-        public bool scp_173 { get; set; } = true;
-        public bool scp_939_53 { get; set; } = true;
-        public bool scp_939_89 { get; set; } = true;
-        public bool scp_079 { get; set; } = true;
+        [Description("What SCP Death Annoucement should be shown?")]
+        public Dictionary<RoleType, bool> annoucement_roles { get; set; } = new Dictionary<RoleType, bool> {
+            { RoleType.Scp106, true},
+            { RoleType.Scp096, true},
+            { RoleType.Scp173, true},
+            { RoleType.Scp93953, true},
+            { RoleType.Scp93989, true},
+            { RoleType.Scp079, true},
+        };
     }
 }
