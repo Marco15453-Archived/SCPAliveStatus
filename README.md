@@ -10,7 +10,7 @@ broadcast_message | string | The Messsage that will be displayed for the SCP Tea
 annoucement_roles | Dictionary | What SCP Death Annoucement should be shown? | All true
 
 # Upcoming Features
-- .scpalive Command (Displays what SCP is still alive can only be run by SCP Team)
+- `.scpalive` Command (Displays what SCP is still alive can only be run by SCP Team)
 
 # Default Config
 ```yml
