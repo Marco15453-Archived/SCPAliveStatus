@@ -11,6 +11,7 @@ annoucement_roles | Dictionary | What SCP Death Annoucement should be shown? | A
 
 # Upcoming Features
 - `.scpalive` Command (Displays what SCP is still alive can only be run by SCP Team)
+- Adding Support for SCP-049 and SCP-049-2
 
 # Default Config
 ```yml
