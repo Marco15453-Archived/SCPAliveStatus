@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace SCPAliveStatus {
     public sealed class Config : IConfig {
+        [Description("Should the plugin be enabled?")]
         public bool IsEnabled { get; set; } = true;
 
         [Description("The duration for how long the Broadcast will be shown")]
@@ -20,6 +21,8 @@ namespace SCPAliveStatus {
             { RoleType.Scp93953, true},
             { RoleType.Scp93989, true},
             { RoleType.Scp079, true},
+            { RoleType.Scp049, true },
+            { RoleType.Scp0492, true }
         };
     }
 }
