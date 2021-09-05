@@ -9,6 +9,9 @@ broadcast_duration | ushort | The duration for how long the Broadcast will be sh
 broadcast_message | string | The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! {SCP} will be replaced with the SCPName | {SCP} is no longer alive!
 annoucement_roles | Dictionary | What SCP Death Annoucement should be shown? | All true
 
+# Upcoming Features
+- .scpalive Command (Displays what SCP is still alive can only be run by SCP Team)
+
 # Default Config
 ```yml
 s_c_p_alive_status:
