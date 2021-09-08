@@ -2,8 +2,10 @@
 using System.ComponentModel;
 using System.Collections.Generic;
 
-namespace SCPAliveStatus {
-    public sealed class Config : IConfig {
+namespace SCPAliveStatus 
+{
+    public sealed class Config : IConfig 
+    {
         [Description("Should the plugin be enabled?")]
         public bool IsEnabled { get; set; } = true;
 
@@ -14,7 +16,8 @@ namespace SCPAliveStatus {
         public string BroadcastMessage { get; set; } = "{SCP} is no longer alive!";
 
         [Description("What SCP Death Annoucement should be shown?")]
-        public Dictionary<RoleType, bool> annoucement_roles { get; set; } = new Dictionary<RoleType, bool> {
+        public Dictionary<RoleType, bool> annoucement_roles { get; set; } = new Dictionary<RoleType, bool> 
+        {
             { RoleType.Scp106, true},
             { RoleType.Scp096, true},
             { RoleType.Scp173, true},
