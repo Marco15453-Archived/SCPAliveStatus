@@ -2,7 +2,8 @@
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
 
-namespace SCPAliveStatus.Events {
+namespace SCPAliveStatus.Events 
+{
     internal sealed class PlayerHandler 
     {
 
