@@ -10,6 +10,11 @@ namespace SCPAliveStatus
     {
         internal static SCPAliveStatus Instance { get; private set; }
 
+        public override string Author => "Marco15453";
+        public override string Name => "SCPAliveStatus";
+        public override Version Version => new Version(1, 2, 0);
+        public override Version RequiredExiledVersion => new Version(3, 0, 0);
+
         private PlayerHandler playerHandler;
 
         public override void OnEnabled() 
