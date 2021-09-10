@@ -12,8 +12,8 @@ namespace SCPAliveStatus
         [Description("The duration for how long the Broadcast will be shown")]
         public ushort BroadcastDuration { get; set; } = 3;
 
-        [Description("The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! {SCP} will be replaced with the SCPName")]
-        public string BroadcastMessage { get; set; } = "{SCP} is no longer alive!";
+        [Description("The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! %SCP% will be replaced with the SCPName")]
+        public string BroadcastMessage { get; set; } = "%SCP% is no longer alive!";
 
         [Description("What SCP Death Annoucement should be shown?")]
         public Dictionary<RoleType, bool> annoucement_roles { get; set; } = new Dictionary<RoleType, bool> 

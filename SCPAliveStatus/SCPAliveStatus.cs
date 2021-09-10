@@ -12,7 +12,7 @@ namespace SCPAliveStatus
 
         public override string Author => "Marco15453";
         public override string Name => "SCPAliveStatus";
-        public override Version Version => new Version(1, 3, 0);
+        public override Version Version => new Version(1, 3, 2);
         public override Version RequiredExiledVersion => new Version(3, 0, 0);
 
         private PlayerHandler playerHandler;

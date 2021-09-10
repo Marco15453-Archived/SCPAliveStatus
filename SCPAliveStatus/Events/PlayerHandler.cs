@@ -14,7 +14,7 @@ namespace SCPAliveStatus.Events
             if (SCPAliveStatus.Instance.Config.annoucement_roles.TryGetValue(ev.Target.Role, out bool value) && !value) return;
 
             ushort duration = SCPAliveStatus.Instance.Config.BroadcastDuration;
-            var message = SCPAliveStatus.Instance.Config.BroadcastMessage.Replace("{SCP}", ev.Target.Role.ToString());
+            var message = SCPAliveStatus.Instance.Config.BroadcastMessage.Replace("%SCP%", ev.Target.Role.ToString());
 
             foreach (Player scp in Player.Get(Team.SCP)) 
             {

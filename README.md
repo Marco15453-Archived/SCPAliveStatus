@@ -6,7 +6,7 @@ Name | Type | Description | Default
 ---- | ---- | ----------- | -------
 is_enabled | bool | Should the plugin be enabled? | true
 broadcast_duration | ushort | The duration for how long the Broadcast will be shown | 3
-broadcast_message | string | The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! {SCP} will be replaced with the SCPName | {SCP} is no longer alive!
+broadcast_message | string | The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! %SCP% will be replaced with the SCPName | %SCP% is no longer alive!
 annoucement_roles | Dictionary | What SCP Death Annoucement should be shown? | All true
 
 # Default Config
@@ -16,8 +16,8 @@ s_c_p_alive_status:
   is_enabled: true
   # The duration for how long the Broadcast will be shown
   broadcast_duration: 3
-  # The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! {SCP} will be replaced with the SCPName
-  broadcast_message: '{SCP} is no longer alive!'
+  # The Messsage that will be displayed for the SCP Team, when a SCP is no longer alive! %SCP% will be replaced with the SCPName
+  broadcast_message: '%SCP% is no longer alive!'
   # What SCP Death Annoucement should be shown?
   annoucement_roles:
     Scp106: true
