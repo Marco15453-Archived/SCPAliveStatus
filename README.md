@@ -1,6 +1,8 @@
 # SCPAliveStatus
 A plugin that adds a broadcast to all SCPs when one SCP dies
 
+**THIS PLUGIN WILL NO LONGER BE SUPPORTED**
+
 # Config
 Name | Type | Description | Default
 ---- | ---- | ----------- | -------
